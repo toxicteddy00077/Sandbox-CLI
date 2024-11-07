@@ -1,0 +1,5 @@
+FROM alipine:latest
+
+RUN [apk add curl, apk add clamav]
+
+CMD ["clamscan"]
