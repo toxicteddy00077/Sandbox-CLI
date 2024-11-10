@@ -1,5 +1,7 @@
 FROM alipine:latest
 
-RUN [apk add curl, apk add clamav]
+RUN [apk add curl && apk add clamav]
+
+SHELL ["/bin/bash", "-sh"]
 
 CMD ["clamscan"]
